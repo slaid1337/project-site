@@ -1,0 +1,109 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 600px;
+    justify-content: space-between;
+    align-content: space-between;
+    border: 5px solid coral;
+    background-color: blue;
+    flex-wrap: wrap;
+}
+.flex-item{
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    border: 5px solid white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+html,body{
+    height: 100%;
+}
+
+header,footer{
+    background-color: aqua;    
+    width: 1140px;
+    margin: 0 auto;
+}
+
+main{
+    background-color: darkcyan;
+    margin: 0 auto;
+    width: 1140px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.service{
+    flex-grow: 1;
+    background-color: cornflowerblue;
+}
+
+aside{
+    width: 200px;
+    background-color: green;
+}
+
+.logo{    
+    text-align: center;
+}
+
+.logo img{    
+    height: 100px;
+}
+
+.menu{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.menu div a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.menu div{
+    background-color: crimson;
+    padding: 20px;
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+footer div p:nth-last-child(1){
+    margin-bottom: 20px;
+}
+
+footer div p:nth-child(2){
+    margin-bottom: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    align-items: center;
+}
+
+footer div{
+    text-align: center;
+}
